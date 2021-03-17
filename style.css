@@ -1,0 +1,54 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: blanchedalmond;
+}
+/*Navbar*/
+.navbar {
+    position: fixed; 
+    width: 100vw; 
+    background: brown;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.nav-list {
+    margin: 1em;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;   
+}
+
+/*Welcome*/
+#welcome-section {
+    grid-column: 1/13;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    background: rgba(148, 143, 143, 0.5);
+}
+
+#contenido-w{
+    line-height: .1;    
+    text-align: center;
+    font-size: 2em;
+}
+
+#contenido-w>p{
+    line-height: 1;
+}
+
+
