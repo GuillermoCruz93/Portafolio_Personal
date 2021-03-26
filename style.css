@@ -7,7 +7,7 @@ body {
     color: blanchedalmond;
 }
 /*Navbar*/
-.navbar {
+#navbar {
     position: fixed; 
     width: 100vw; 
     background: brown;
@@ -50,5 +50,55 @@ a {
 #contenido-w>p{
     line-height: 1;
 }
+/*Proyectos*/
+#projects{
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background:rgb(56, 103, 231);
+    padding-bottom: 1em;
+}
 
+.project-tile{
+    background: grey;
+    text-align: center;
+    grid-column: 2/12;
+    width: auto;
+    padding: 1em 1em 0em 1em;
+    margin-top: 2em;
+}
+
+.project-tile>a>img{
+    width: 100%;
+
+}
+
+#redes{
+    background: cornsilk;
+    display: flex;    
+    justify-content: space-around;
+    width: 100vw;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#redes>a>img{
+    width: 80%;
+}
+
+/* Desktops ------------------ */
+@media only screen 
+and (min-width : 1201px) 
+
+{
+    #projects{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        justify-content: space-around;
+        padding-bottom: 2em;
+    }
+
+}
 
